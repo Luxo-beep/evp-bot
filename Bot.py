@@ -16,7 +16,7 @@ def start(message):
 def get_text_messages(message):
  if(message.text == "❓ Задать вопрос"):
    markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-   bot.send_message(message.chat.id, text="Hапиши @votsi_ken если хочешь получить помощь", reply_markup=markup)
+   bot.send_message(message.chat.id, text="Hапиши @evp_promo_support_bot если хочешь получить помощь", reply_markup=markup)
  if message.text == "2284":
     bot.send_document(message.from_user.id, document=open('/evp-bot/1/1.xlsx', 'rb'))
  if message.text == "280990":
@@ -48,7 +48,7 @@ def get_text_messages(message):
  if message.text == "Testcode":
     bot.send_document(message.from_user.id, document=open('/evp-bot/1/15.xlsx', 'rb'))
  elif message.text == "/help":
-    bot.send_message(message.from_user.id, "Напиши @votsi_ken если есть вопросы")
+    bot.send_message(message.from_user.id, "Напиши @evp_promo_support_bot если есть вопросы")
 # Запускаем бота
 bot.polling(none_stop=True, interval=0)
 
