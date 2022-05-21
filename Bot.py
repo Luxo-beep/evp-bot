@@ -2,7 +2,7 @@ import telebot
 from telebot import types
 print('Бот запущен')
 # Создаем экземпляр бота
-bot = telebot.TeleBot('5374854792:AAE1v9jSq2Y5ThRgCwPGP0S086m2ObPNq-g')
+bot = telebot.TeleBot('5309216038:AAFCgPEzMjDUer1vPunjfVkTwIfvMw_HRSI')
 # Функция, обрабатывающая команду /start
 @bot.message_handler(commands=["start"])
 def start(message):
